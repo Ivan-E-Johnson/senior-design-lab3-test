@@ -35,13 +35,13 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
+    text: "Ivan's Page",
+    url: "IvanPage",
     badge: false,
     description:
-      "A simple example of linking to another page within a Gatsby site",
+      "Ivan's Profile Page ",
   },
-  { text: "TypeScript", url: "using-typescript" },
+  { text: "Niam's Profile Page", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
