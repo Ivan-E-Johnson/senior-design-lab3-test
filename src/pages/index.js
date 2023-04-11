@@ -42,6 +42,13 @@ const samplePageLinks = [
       "Ivan's Profile Page ",
   },
   { text: "Niam's Profile Page", url: "using-typescript" },
+  {
+    text: "Alec's Page",
+    url: "AlecPage",
+    badge: false,
+    description:
+      "Alec's Profile Page ",
+  },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
