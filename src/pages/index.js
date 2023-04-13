@@ -8,29 +8,24 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
+    text: "Alec",
+    src: "C:...\images\TCSNSprofilePickME.jpg",
     url: "https://www.gatsbyjs.com/docs/tutorial",
     description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
+      "He's a pretty cool guy once you get to know him.",
   },
   {
-    text: "Examples",
+    text: "Ivan",
     url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
     description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
+      "Genius, inventor, and all around cool guy.",
   },
   {
-    text: "Plugin Library",
+    text: "Niam",
     url: "https://www.gatsbyjs.com/plugins",
     description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
+      "Smart, funny, and a great person.",
+  }
 ]
 
 const samplePageLinks = [
@@ -44,14 +39,13 @@ const samplePageLinks = [
   { text: "Niam's Profile Page", url: "using-typescript" },
   {
     text: "Alec's Page",
+    
     url: "AlecPage",
     badge: false,
     description:
       "Alec's Profile Page ",
   },
   { text: "Niam's Profile Page", url: "NiamPage" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
 ]
 
 const moreLinks = [
@@ -81,7 +75,7 @@ const IndexPage = () => (
   <Layout>
     <div className={styles.textCenter}>
       <StaticImage
-        src="../images/example.png"
+        src="../images/pngwing.com.png"
         loading="eager"
         width={64}
         quality={95}
@@ -90,7 +84,7 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to team Blitz's Profile Page!
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}

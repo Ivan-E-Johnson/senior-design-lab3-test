@@ -31,7 +31,7 @@ const LandingPage = () => (
           style={{ marginBottom: `var(--space-3)` }}
         />
         <h1>
-          Welcome to <b>Gatsby!</b>
+          Welcome to team Blitz's Profile Page!
         </h1>
         <p className={styles.intro}>
           <b>Example pages:</b>{" "}
