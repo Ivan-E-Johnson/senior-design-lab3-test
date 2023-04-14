@@ -18,7 +18,17 @@ const IvanPage = () => {
   return(
   
     <Layout>
+      
       <h1>Hi from Ivan's page</h1>
+
+      <StaticImage
+        src="../images/IMG_5158.png"
+        loading="eager"
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ marginBottom: `var(--space-3)` }}
+      />
       <p>I have done so much</p>
       <Link to="/">Go back to the homepage</Link>
       
