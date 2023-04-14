@@ -22,9 +22,11 @@ const IvanPage = () => {
       <h1>Hi from Ivan's page</h1>
 
       <StaticImage
-        src="../images/IMG_5158.png"
+        src="../images/IMG_5168.png"
         loading="eager"
-        quality={95}
+        quality={40}
+        width = {40}
+        height={ 60}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
