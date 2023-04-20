@@ -8,21 +8,21 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Alec",
+    text: "Alec Knobloch",
     src: "C:...\images\TCSNSprofilePickME.jpg",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    url: "AlecPage",
     description:
       "He's a pretty cool guy once you get to know him.",
   },
   {
-    text: "Ivan",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Ivan Johnson",
+    url: "IvanPage",
     description:
       "Genius, inventor, and all around cool guy.",
   },
   {
-    text: "Niam",
-    url: "https://www.gatsbyjs.com/plugins",
+    text: "Niam El-Zein",
+    url: "NiamPage",
     description:
       "Smart, funny, and a great person.",
   }
@@ -36,7 +36,7 @@ const samplePageLinks = [
     description:
       "Ivan's Profile Page ",
   },
-  { text: "Niam's Profile Page", url: "using-typescript" },
+  { text: "Niam's Page", url: "using-typescript" },
   {
     text: "Alec's Page",
     
@@ -45,29 +45,9 @@ const samplePageLinks = [
     description:
       "Alec's Profile Page ",
   },
-  { text: "Niam's Profile Page", url: "NiamPage" },
+  
 ]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
@@ -87,7 +67,7 @@ const IndexPage = () => (
         Welcome to team Blitz's Profile Page!
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+        <b>Team pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -95,7 +75,6 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
         <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>
@@ -111,14 +90,14 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <script>
+      function changeBackgroundColor() {document.body.style.backgroundColor = "white" }
+    </script>
   </Layout>
+  
 )
+  
 
 /**
  * Head export to define metadata for the page
