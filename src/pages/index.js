@@ -90,7 +90,7 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <button onClick="changeBackgroundColor()">Change Background Color</button>
     <script>
       function changeBackgroundColor() {document.body.style.backgroundColor = "white" }
     </script>
