@@ -36,7 +36,7 @@ const samplePageLinks = [
     description:
       "Ivan's Profile Page ",
   },
-  { text: "Niam's Page", url: "using-typescript" },
+  { text: "Niam's Page", url: "NiamPage" },
   {
     text: "Alec's Page",
     
@@ -90,10 +90,7 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    <button onClick="changeBackgroundColor()">Change Background Color</button>
-    <script>
-      function changeBackgroundColor() {document.body.style.backgroundColor = "white" }
-    </script>
+
   </Layout>
   
 )
