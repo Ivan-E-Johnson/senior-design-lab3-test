@@ -2,26 +2,6 @@ import React, { useEffect, useRef, useState, forwardRef, useImperativeHandle } f
 import Chart from 'chart.js/auto';
 
 
-// export  function generateRandomData(numLabels) {
-//     const labels = [];
-//     const Completed = [];
-//     const Active = [];
-//     const Timeout = [];
-  
-//     for (let i = 1; i <= numLabels; i++) {
-//       labels.push(`Label ${i}`);
-//       Completed.push(Math.floor(Math.random() * 100));
-//       Active.push(Math.floor(Math.random() * 100));
-//       Timeout.push(Math.floor(Math.random() * 100));
-//     }
-  
-//     return {
-//       labels,
-//       Completed,
-//       Active,
-//       Timeout,
-//     };
-//   }
 
 const BarGraph = forwardRef(({ data }, ref) => {
   const canvasRef = useRef();

@@ -15,11 +15,7 @@ const IvanPage = () => {
     identifier: 'ivan-page',
     title: "Ivan's Page",
   }
-
-  useEffect(() => {
-    retrieveTrafficData();
-    setInterval(() => retrieveTrafficData(), 60000); 
-  }, []);
+  const MAX_RANDOM_LABELS = 10
 
   function generateRandomData(numLabels) {
     const labels = [];
@@ -29,20 +25,33 @@ const IvanPage = () => {
   
     for (let i = 1; i <= numLabels; i++) {
       labels.push(`Label ${i}`);
-      Completed.push(Math.floor(Math.random() * 100));
-      Active.push(Math.floor(Math.random() * 100));
-      Timeout.push(Math.floor(Math.random() * 100));
+      Completed.push(Math.floor(Math.random() * 100) + i); // generate random number or addition
+      Active.push(Math.floor(Math.random() * 100) + i); // generate random number or addition
+      Timeout.push(Math.floor(Math.random() * 100) + i); // generate random number or addition
     }
   
     return { labels, datasets: [{ label: 'Completed', data: Completed }, { label: 'Active', data: Active }, { label: 'Timeout', data: Timeout }] };
   }
+  
+  useEffect(() => {
+    numLabels =Math.floor(Math.random()*MAX_RANDOM_LABELS)
+    generateRandomData(numLabels); // pass numLabels as 6
+    setInterval(() => generateRandomData(numLabels), 10000); // pass numLabels as 6
+  }, []);
+  
 
-  const [trafficData, setTrafficData] = useState({});
+
   const chartRef = React.createRef();
 
-  function retrieveTrafficData() {
-    // Fetch traffic data from your server and update state
-  }
+  const initialData = {
+    labels: ['7', '8', '10', '11', '9', '15'],
+    datasets: [
+      { label: 'Completed', data: [14, 3, 8, 3, 6, 1] },
+      { label: 'Active', data: [] },
+      { label: 'Timeout', data: [3] }
+    ]
+  };
+
 
   return (
     <Layout>
