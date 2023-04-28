@@ -35,7 +35,7 @@ const IvanPage = () => {
           alt="Image 1"
           placeholder="blurred"
         />
-        <p className="legend">Image 1</p>
+        <p className="legend">In Paris</p>
       </div>
       <div>
         <StaticImage
@@ -43,15 +43,15 @@ const IvanPage = () => {
           alt="Image 2"
           placeholder="blurred"
         />
-        <p className="legend">Image 2</p>
+        <p className="legend">My Cat Clyde</p>
       </div>
       <div>
         <StaticImage
           src="../images/Ivan_imgs/IMG_3576.jpg"
-          alt="Image 3"
+          alt="StudyAbroad_1"
           placeholder="blurred"
         />
-        <p className="legend">Image 3</p>
+        <p className="legend">Roman Ruins</p>
       </div>
     </Carousel>
 
