@@ -222,3 +222,13 @@ pre tt:before,
 pre tt:after {
   content: none;
 }
+/* .carousel-image {
+  width: 100%;
+  height: 1200px; // Adjust the height as needed //
+  object-fit:  scale-down;
+} */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
