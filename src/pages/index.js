@@ -39,7 +39,6 @@ const samplePageLinks = [
   { text: "Niam's Page", url: "NiamPage" },
   {
     text: "Alec's Page",
-    
     url: "AlecPage",
     badge: false,
     description:
@@ -47,7 +46,6 @@ const samplePageLinks = [
   },
   
 ]
-
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
@@ -57,15 +55,19 @@ const IndexPage = () => (
       <StaticImage
         src="../images/pngwing.com.png"
         loading="eager"
-        width={64}
+        width={200}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
-      <h1>
-        Welcome to team Blitz's Profile Page!
-      </h1>
+      <h1>Hello, We are Senior design team 2.</h1>
+      <p>
+        We are all Engineering students at the University of Iowa. Through the
+        first half of Senior Design, we worked on three labs that helped us
+        prepare for our project in the second half, where we will be building a
+        mini greenhouse module.
+      </p>
       <p className={styles.intro}>
         <b>Team pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
@@ -80,27 +82,19 @@ const IndexPage = () => (
     <ul className={styles.list}>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
-          <a
+          <Link
             className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
+            to={`${link.url}${utmParameters}`}
           >
             {link.text} ↗
-          </a>
+          </Link>
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
       ))}
     </ul>
-
   </Layout>
-  
 )
-  
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
