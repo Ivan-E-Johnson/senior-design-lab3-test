@@ -40,16 +40,17 @@ const AlecPage = () => {
           
           <div>
             <StaticImage
-              src="..images/Alec_imgs/TCSNSprofilePickME.jpg"
+              src="../images/Alec_imgs/Alec_grass.jpg"
               alt="Image 1"
               placeholder="blurred"
               className="carousel-image"
             />
+            <h1>Hi from Alec's page</h1>
             <p className="legend">Alec</p>
           </div>
           <div>
             <StaticImage
-              src="..images/Alec_imgs/man_and_pup.png"
+              src="../images/Alec_imgs/man_and_pup.png"
               alt="Image 2"
               placeholder="blurred"
               className="carousel-image"
@@ -58,7 +59,7 @@ const AlecPage = () => {
           </div>
           <div>
             <StaticImage
-              src="..images/Alec_imgs/First_day_of_16th_Grade.jpg"
+              src="../images/Alec_imgs/First_day_of_16th_Grade.jpg"
               alt="Image 3"
               placeholder="blurred"
               className="carousel-image"
