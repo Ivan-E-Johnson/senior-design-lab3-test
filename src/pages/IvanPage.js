@@ -35,7 +35,7 @@ const IvanPage = () => {
           alt="Image 1"
           placeholder="blurred"
         />
-        <p className="legend">In Paris</p>
+        <p className="legend">In Boston</p>
       </div>
       <div>
         <StaticImage
